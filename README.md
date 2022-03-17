@@ -2,7 +2,7 @@
 Personal framework
 
 ## Implementing :
-- jbtTimer:\
-    library containing different timers
-- jbtStateMachine:\
-    library implementing a statemachine system (TODO: work with scxml)
+|Library|description
+|---|---|
+|jbtTimer|library containing different timers|
+|jbtStateMachine|library implementing a statemachine system (TODO: work with scxml)|
