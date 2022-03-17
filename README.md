@@ -1,7 +1,7 @@
 # jbtframework
 Personal framework
 
-Implementing :
+## Implementing :
 - jbtTimer:\
     library containing different timers
 - jbtStateMachine:\
