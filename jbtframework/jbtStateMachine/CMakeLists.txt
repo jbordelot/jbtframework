@@ -7,4 +7,6 @@ set(
     code/src/jbtStateMachine.cpp
 )
 
-add_library(lib${PROJECT_NAME} ${SOURCES})
+add_library(${PROJECT_NAME} ${SOURCES})
+
+install(TARGETS ${PROJECT_NAME} DESTINATION lib)
