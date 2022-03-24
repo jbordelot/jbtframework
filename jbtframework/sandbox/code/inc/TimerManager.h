@@ -1,6 +1,7 @@
 #pragma once
 
 #include <jbtScopedTimer.h>
+#include <jbtTriggerTimer.h>
 
 class TimerManager
 {
@@ -21,4 +22,6 @@ private:
     void test3();
     void test4();
     void test5();
+
+    void test6();
 };

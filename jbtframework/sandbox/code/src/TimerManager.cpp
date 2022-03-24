@@ -20,11 +20,12 @@ TimerManager::~TimerManager()
 
 void TimerManager::run()
 {
-    test1();
-    test2();
-    test3();
-    test4();
-    test5();
+    // test1();
+    // test2();
+    // test3();
+    // test4();
+    // test5();
+    test6();
 }
 
 void TimerManager::test1()
@@ -80,4 +81,15 @@ void TimerManager::test5()
     }
     double precision = durationResult / 100.0;
     std::cout << "precision: " << precision << '\n';
+}
+
+void TimerManager::test6()
+{
+    uint32_t count = 0;
+    jbt::TriggerTimer timer([&](uint32_t timeout, jbt::TriggerTimer* timer){++count;});
+    timer.start(100, true);
+    using namespace std::chrono_literals;
+    std::this_thread::sleep_for(1s);
+    timer.stop();
+    std::cout << "Precision: " << double(count) / 10.0 << '\n';
 }
